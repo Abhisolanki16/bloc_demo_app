@@ -1,16 +1,53 @@
-# bloc_demo
+# 🧩 Flutter BLoC & Cubit Demo Apps
 
-A new Flutter project.
+This repository contains two simple Flutter demo applications that showcase effective state management using the [`flutter_bloc`](https://pub.dev/packages/flutter_bloc) package.
 
-## Getting Started
+## 📱 Overview
 
-This project is a starting point for a Flutter application.
+- ✅ **To-Do App (Cubit):**  
+  A lightweight task manager built using **Cubit**, demonstrating minimal and straightforward state handling.
 
-A few resources to get you started if this is your first Flutter project:
+- 👤 **Person Manager App (BLoC):**  
+  A basic CRUD (Create, Read, Delete) app using the full **BLoC pattern** that allows users to add and remove persons along with their name and date of birth.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+These examples help you understand the differences between **Cubit** and **BLoC**, making it easier to choose the right approach for your Flutter projects.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 🔧 Features
+
+### To-Do App (Cubit)
+- Add and remove to-do items
+- Simple UI with clean Cubit-based state handling
+- Reactive updates with `CubitBuilder`
+
+### Person Manager App (BLoC)
+- Add a person with name and date of birth
+- Remove a person from the list
+- Uses `BlocProvider`, `BlocBuilder`, and `Bloc` events/states
+- Demonstrates structured BLoC architecture
+
+---
+
+## 📁 Folder Structure
+lib/
+├── cubit_todo_app/
+│ ├── cubit/
+│ │ ├── todo_cubit.dart
+│ │ └── todo_state.dart
+│ ├── models/
+│ │ └── todo.dart
+│ └── screens/
+│ └── todo_screen.dart
+├── bloc_person_app/
+│ ├── blocs/
+│ │ ├── person_bloc.dart
+│ │ ├── person_event.dart
+│ │ └── person_state.dart
+│ ├── models/
+│ │ └── person.dart
+│ ├── screens/
+│ │ └── person_screen.dart
+│ └── widgets/
+│ └── person_form.dart
+└── main.dart
